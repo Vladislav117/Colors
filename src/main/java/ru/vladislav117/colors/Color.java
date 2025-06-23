@@ -193,7 +193,6 @@ public class Color implements ColorLike {
         this.alpha = alpha;
     }
 
-
     /**
      * Создание цвета. Значение альфа канала будет равно 1.
      *
