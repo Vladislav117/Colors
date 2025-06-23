@@ -61,6 +61,7 @@ public interface ColorLike extends RGBColorSpaceHolder, TransparencyColorSpaceHo
 
     /**
      * Сравнивание цветов.
+     * Цвет может быть сравнён только с ColorLike цветом или объектом класса, наследуемого от ColorLike.
      *
      * @param obj Цвет, с которым будет проводиться сравнение
      * @return Равенство цветов
