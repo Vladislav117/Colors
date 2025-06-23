@@ -3,6 +3,8 @@ package ru.vladislav117.colors;
 import ru.vladislav117.colors.colorspace.RGBColorSpaceHolder;
 import ru.vladislav117.colors.colorspace.TransparencyColorSpaceHolder;
 
+import java.util.Objects;
+
 /**
  * Цвет.
  */
@@ -340,5 +342,21 @@ public class Color implements ColorLike {
     @Override
     public Color toMixed(ColorLike other, float ratio) {
         return clone().mix(other, ratio);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(red, green, blue, alpha);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof ColorLike other)) return false;
+        return red == other.getRed() && green == other.getGreen() && blue == other.getBlue() && alpha == other.getAlpha();
+    }
+
+    @Override
+    public String toString() {
+        return "(" + red + ", " + green + ", " + blue + ", " + alpha + ")";
     }
 }

@@ -51,4 +51,26 @@ public interface ColorLike extends RGBColorSpaceHolder, TransparencyColorSpaceHo
      * @return Новый цвет.
      */
     ColorLike toMixed(ColorLike other, float ratio);
+
+    /**
+     * Вычисление хеш-кода цвета.
+     *
+     * @return Хеш-код цвета.
+     */
+    int hashCode();
+
+    /**
+     * Сравнивание цветов.
+     *
+     * @param obj Цвет, с которым будет проводиться сравнение
+     * @return Равенство цветов
+     */
+    boolean equals(Object obj);
+
+    /**
+     * Преобразование цвета к строке.
+     *
+     * @return Строка.
+     */
+    String toString();
 }
