@@ -178,4 +178,17 @@ public class ColorTests {
         Assertions.assertEquals(0.1f, color1.getGreen());
         Assertions.assertEquals(0, color1.getBlue());
     }
+
+    @Test
+    public void testComparing() {
+        Color color1 = new Color(1, 0, 0);
+        Color color2 = new Color(1, 0, 0, 0);
+        Color color3 = new Color(1, 0, 0, 1);
+
+        boolean equals2 = color1.equals(color2);
+        boolean equals3 = color1.equals(color3);
+
+        Assertions.assertFalse(equals2);
+        Assertions.assertTrue(equals3);
+    }
 }
