@@ -11,7 +11,7 @@ public interface RGBColorSpaceHolder extends RedChannelHolder, GreenChannelHolde
     /**
      * Получение значений цветовых каналов RGB.
      *
-     * @return Значение цветовых каналов RGB в диапазоне [0; 1].
+     * @return Значения цветовых каналов RGB в диапазоне [0; 1].
      */
     float[] getRGB();
 
