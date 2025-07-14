@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.Vladislav117:Colors:0.3.0'
+    implementation 'com.github.Vladislav117:Colors:0.3.1'
 }
 ```
 
