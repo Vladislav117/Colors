@@ -10,7 +10,7 @@ import java.awt.*;
 /**
  * Объекты, реализующие этот интерфейс, находятся в цветовом пространстве RGB.
  */
-public interface RGBColorSpaceHolder extends RedChannelHolder, GreenChannelHolder, BlueChannelHolder, ColorSpaceHolder, Cloneable {
+public interface RGBColorSpaceHolder extends RedChannelHolder, GreenChannelHolder, BlueChannelHolder, ColorSpaceHolder {
     /**
      * Получение значений цветовых каналов RGB.
      *
